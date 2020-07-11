@@ -254,43 +254,55 @@
 	
 	 <a class="btn btn-lg btn-secondary btn-block" href="tel: 052-5780088">לשיחת ייעוץ ראשונה ללא עלות</a>
 	 
-	 <hr>
+	<hr>
     <!-- Contact Form -->
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row">
       <div class="col-lg-8 mb-4">
         <h3>שליחת הודעה</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
+        <form name="sentMessage" id="contactForm" novalidate 
+		action="https://script.google.com/macros/s/AKfycbxH8PdRjKYQ5FEjnZkoOwU2rweig3S-72SqG3la/exec"
+		method="POST"
+		class="gform">
           <div class="control-group form-group">
             <div class="controls">
               <label>שם מלא:</label>
-              <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+              <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="Please enter your name.">
               <p class="help-block"></p>
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
               <label>מספר טלפון:</label>
-              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              <input type="tel" class="form-control" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
               <label>כתובת מייל:</label>
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="Please enter your email address.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
               <label>הודעה:</label>
-              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              <textarea rows="10" cols="100" class="form-control" id="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
             </div>
           </div>
-          <div id="success"></div>
+		  <div class="control-group form-group d-none">
+            <div class="controls">
+              <label>לא בשימוש</label>
+              <textarea rows="10" cols="100" class="form-control" id="notUsed" name="notUsed" data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+            </div>
+          </div>
+          <div id="success" class="thankyou_message d-none">ההודעה נשלחה בהצלחה. תודה רבה.</div>
           <!-- For success/fail messages -->
           <button type="submit" class="btn btn-primary" id="sendMessageButton">שלח</button>
         </form>
       </div>
+	  
+	  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="js/form-submission-handler.js"></script>
 
     </div>
     <!-- /.row -->
