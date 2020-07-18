@@ -92,7 +92,7 @@
     <!-- Intro Content -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+        <img class="img-fluid rounded mb-4" src="res/pictures/pediatric_physical_therapy_750_450.jpg" alt="">
       </div>
       <div class="col-lg-6">
         <h2>טיפול אישי בפיזיותרפיה התפתחותית</h2>
@@ -105,7 +105,7 @@
 	
 	<hr>
 			
-	 <a class="btn btn-lg btn-secondary btn-block" href="#">לתיאום אבחון וטיפול או ביקור בית</a>
+	 <a id="callButton" class="btn btn-lg btn-secondary btn-block" href="tel: 052-5780088">לתיאום אבחון וטיפול או ביקור בית</a>
 	 
 	 <hr>
 
@@ -115,7 +115,7 @@
     <div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
-          <a href="sadnaot.html#pediatric_physical_therapy"><img class="card-img-top" src="http://placehold.it/750x450" alt=""></a>
+          <a href="sadnaot.html#pediatric_physical_therapy"><img class="card-img-top" src="res/pictures/pediatric_physical_therapy_sadnaot_700_400.jpg" alt=""></a>
           <div class="card-body">
             <a href="sadnaot.html#pediatric_physical_therapy"><h4 class="card-title">סדנאות</h4></a>
             <a href="sadnaot.html#pediatric_physical_therapy"><h6 class="card-subtitle mb-2 text-muted">פיזיותרפיה התפתחותית</h6></a>
@@ -141,8 +141,37 @@
 			</div>
         </div>
       </div>
+	  
     </div>
     <!-- /.row -->
+	
+	<hr>
+	
+	<div class="row">
+	
+	<div class="col-lg-3 col-sm-4 mb-4">
+        <div class="card h-100 text-center">
+		<div class="card-header">
+		<h6 class="card-subtitle mb-2 text-muted">קבוצת וואטסאפ</h6>
+		<h5 class="card-title">רבקה לב פיזיותרפיה והדרכת הורים</h5>
+		</div>
+		<a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw"><img class="rounded-circle img-fluid img-thumbnail" src="res/pictures/WhatsApp groups - Physiothearapy and parents instruction.jpg" alt="Responsive image" href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw"></a>
+          <div class="card-body">
+		  <p class="card-text">
+קבוצה זו נועדה עבורכם הורים לתינוקות בכל גיל, גם לעוברים בבטן... 
+בכדי לשמש פלטפורמה לשאלת שאלות, התייעצות או כל דבר אחר שעולה לכן בראש 🙃
+בנושאי פיזיותרפיה התפתחותית, והדרכת הורים
+</p>
+          </div>
+		  <div class="card-footer">
+            <!-- <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" class="btn btn-primary">להצטרפות</a> -->
+           <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" class="fa fa-whatsapp"></a>
+			<a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" class="h5">להצטרפות</a>
+		  </div>
+        </div>
+      </div>
+	
+	</div>
 
   </div>
   <!-- /.container -->
@@ -172,6 +201,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+$(document).ready(function(){
+ $('#callButton').on('click', function () {
+  $(this).html('טלפון: 052-5780088');
+});
+});
+</script>
 
 </body>
 
