@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
 
@@ -10,19 +10,21 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-179818286-1');
+    gtag('config', 'UA-179818286-1', { anonymize_ip: true });
   </script>
 
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <link rel="icon" type="image/svg+xml" href="res/favicon.svg">
+  <meta name="theme-color" content="#343a40">
+  <meta name="description" content="רבקה לב - פיזיותרפיסטית התפתחותית ומדריכת הורים בהרצליה. טיפול אישי לתינוקות וילדים, שיקום רצפת אגן לנשים, רצפת אגן לילדים, הרצאות וסדנאות. מובילת ה-ICCS בישראל ברצפת האגן הפדיאטרית.">
   <meta name="author" content="">
 
   <title>רבקה לב - פיזיותרפיה התפתחותית, הדרכת הורים ושיקום רצפת אגן</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
@@ -34,13 +36,16 @@
 
 <body>
 
+  <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+
+
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav aria-label="תפריט ראשי" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">רבקה לב</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="פתיחה וסגירה של התפריט">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -92,8 +97,9 @@
 
   <header>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" role="region" aria-label="החלפת תמונות פתיחה מתחלפת באופן אוטומטית">
 
+      <button type="button" class="carousel-pause-btn" id="carouselPause" aria-label="הפסקת החלפת התמונות האוטומטית" aria-pressed="false"><span class="fa fa-pause" aria-hidden="true"></span></button>
       <div class="carousel-inner" role="listbox">
 
         <div class="carousel-item active" data-interval="3000" style="background-image: url('res/pictures/intro1.jpg')">
@@ -137,6 +143,7 @@
   </header>
 
   <!-- Page Content -->
+<main id="main">
   <div class="container">
 
     <h1 class="my-4">טיפול אישי</h1>
@@ -146,9 +153,9 @@
 
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h4 class="card-header">פיזיותרפיה התפתחותית</h4>
+          <h3 class="card-header">פיזיותרפיה התפתחותית</h3>
           <a href="pediatric_physical_therapy.html"><img class="card-img-top"
-              src="res/pictures/pediatric_physical_therapy_card_2_700_400.jpg" alt="Card image cap"></a>
+              src="res/pictures/pediatric_physical_therapy_card_2_700_400.jpg" alt=""></a>
           <div class="card-body">
             <p class="card-text">למה הילד לא זוחל? מה חשוב לעשות עם העדפת צד? והאם מותר להושיב את התינוק? </p>
           </div>
@@ -160,9 +167,9 @@
 
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h4 class="card-header">שיקום רצפת אגן לנשים</h4>
+          <h3 class="card-header">שיקום רצפת אגן לנשים</h3>
           <a href="pelvic_floor_rehabilitation.html"><img class="card-img-top"
-              src="res/pictures/pelvic_card_700_400.jpg" alt="Card image cap"></a>
+              src="res/pictures/pelvic_card_700_400.jpg" alt=""></a>
           <div class="card-body">
             <p class="card-text">לי חשוב לדעת איך את מרגישה באמת, מה הקשיים שיש לך? האם את במצב רוח טוב, מתפקדת? האם
               משהו השתנה? הפיפי בורח? היו תפרים? ישנה היפרדות בטנית? יש כאב ביחסי מין? פתאום התחילו עצירויות?</p>
@@ -175,9 +182,9 @@
 
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h4 class="card-header">רצפת אגן לילדים</h4>
+          <h3 class="card-header">רצפת אגן לילדים</h3>
           <a href="pediatric_pelvic_floor.html"><img class="card-img-top"
-              src="res/pictures/pelvic_children_card_700_400.jpg" alt="Card image cap"></a>
+              src="res/pictures/pelvic_children_card_700_400.jpg" alt=""></a>
           <div class="card-body">
             <p class="card-text">מה זה בכלל???? עצירויות, הרטבות לילה, גמילה מחיתולים</p>
           </div>
@@ -191,7 +198,7 @@
 
     <hr>
 
-    <a id="callButton1" class="btn btn-lg btn-secondary btn-block" href="tel: 052-5780088">לשיחת ייעוץ ראשונה ללא
+    <a class="btn btn-lg btn-secondary btn-block js-phone-cta" href="tel:052-5780088">לשיחת ייעוץ ראשונה ללא
       עלות</a>
 
     <hr>
@@ -202,11 +209,11 @@
     <div class="row">
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100 text-center">
-          <a href="lectures.html"><img class="card-img-top" src="res/pictures/lectures_card_700_400.jpg" alt=""></a>
+          <a href="lectures.html"><img class="card-img-top" src="res/pictures/lectures_card_700_400.jpg" alt="אל עמוד ההרצאות"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="lectures.html">הרצאות</a>
-            </h4>
+            </h3>
             <p class="card-text"></p>
           </div>
         </div>
@@ -214,11 +221,11 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100 text-center">
-          <a href="sadnaot.html"><img class="card-img-top" src="res/pictures/sadnaot_700_400.jpg" alt=""></a>
+          <a href="sadnaot.html"><img class="card-img-top" src="res/pictures/sadnaot_700_400.jpg" alt="אל עמוד הסדנאות"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="sadnaot.html">סדנאות</a>
-            </h4>
+            </h3>
             <p class="card-text"></p>
           </div>
         </div>
@@ -228,11 +235,11 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100 text-center">
-          <a href="movies.html"><img class="card-img-top" src="res/pictures/movies_card_700_400.jpg" alt=""></a>
+          <a href="movies.html"><img class="card-img-top" src="res/pictures/movies_card_700_400.jpg" alt="אל עמוד הסרטונים"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="movies.html">סרטונים</a>
-            </h4>
+            </h3>
             <p class="card-text"></p>
           </div>
         </div>
@@ -240,22 +247,22 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100 text-center">
-          <a href="posts.html"><img class="card-img-top" src="res/pictures/articles_card_700_400.jpg" alt=""></a>
+          <a href="posts.html"><img class="card-img-top" src="res/pictures/articles_card_700_400.jpg" alt="אל עמוד הפוסטים"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="posts.html">פוסטים</a>
-            </h4>
+            </h3>
             <p class="card-text"></p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100 text-center">
-          <a href="tips.html"><img class="card-img-top" src="res/pictures/tips_700_400.jpg" alt=""></a>
+          <a href="tips.html"><img class="card-img-top" src="res/pictures/tips_700_400.jpg" alt="אל עמוד הטיפים"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="tips.html">טיפים</a>
-            </h4>
+            </h3>
             <p class="card-text"></p>
           </div>
         </div>
@@ -263,11 +270,11 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100 text-center">
-          <a href="reviews.html"><img class="card-img-top" src="res/pictures/like_700_400.jpg" alt=""></a>
+          <a href="reviews.html"><img class="card-img-top" src="res/pictures/like_700_400.jpg" alt="אל עמוד ההמלצות"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="reviews.html">המלצות</a>
-            </h4>
+            </h3>
             <p class="card-text"></p>
           </div>
         </div>
@@ -292,10 +299,11 @@
         <p>כיום, אני מטפלת בקליניקה פרטית בהרצליה, בה אני מסתכלת, בודקת ומאבחנת בראייה של התמונה כולה.</p>
         <p>מעבר לטיפולים הפרטניים, אני מדריכה פיזיותרפיסטים ביחידה להתפתחות הילד באור יהודה, כמו כן אני מעבירה סדנאות
           והרצאות בנושאים האלו בכל הארץ.</p>
+        <p>בנוסף, רבקה חברה בארגון ה-ICCS – International Children's Continence Society, ומשמשת כמובילת ה-ICCS בישראל בתחום רצפת האגן הפדיאטרי.</p>
         <p>אשמח לעזור ולייעץ בכל שאלה.</p>
       </div>
       <div class="col-lg-6">
-        <img class="img-fluid rounded" src="res/pictures/Rivka_Lev_750_450.jpg" alt="">
+        <img class="img-fluid rounded" src="res/pictures/Rivka_Lev_750_450.jpg" alt="רבקה לב, פיזיותרפיסטית בקליניקה בהרצליה">
       </div>
     </div>
     <!-- /.row -->
@@ -303,63 +311,60 @@
     <hr>
 
 
-    <a id="callButton2" class="btn btn-lg btn-secondary btn-block" href="tel: 052-5780088">לשיחת ייעוץ ראשונה ללא
+    <a class="btn btn-lg btn-secondary btn-block js-phone-cta" href="tel:052-5780088">לשיחת ייעוץ ראשונה ללא
       עלות</a>
 
     <hr>
     <!-- Contact Form -->
-    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row">
       <div class="col-lg-8 mb-4">
         <h3>שליחת הודעה</h3>
-        <form name="sentMessage" id="contactForm" novalidate
+        <form name="sentMessage" id="contactForm"
           action="https://script.google.com/macros/s/AKfycbxH8PdRjKYQ5FEjnZkoOwU2rweig3S-72SqG3la/exec" method="POST"
           class="gform">
           <div class="control-group form-group">
             <div class="controls">
-              <label>שם מלא:</label>
-              <input type="text" class="form-control" id="name" name="name" required
-                data-validation-required-message="Please enter your name.">
+              <label for="name">שם מלא:</label>
+              <input type="text" class="form-control" id="name" name="name" required autocomplete="name">
               <p class="help-block"></p>
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>מספר טלפון:</label>
-              <input type="tel" class="form-control" id="phone" name="phone" required
-                data-validation-required-message="Please enter your phone number.">
+              <label for="phone">מספר טלפון:</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required autocomplete="tel"
+                inputmode="tel">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>כתובת מייל:</label>
-              <input type="email" class="form-control" id="email" name="email" required
-                data-validation-required-message="Please enter your email address.">
+              <label for="email">כתובת מייל:</label>
+              <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>הודעה:</label>
+              <label for="message">הודעה:</label>
               <textarea rows="10" cols="100" class="form-control" id="message" name="message" required
-                data-validation-required-message="Please enter your message" maxlength="999"
-                style="resize:none"></textarea>
+                maxlength="999" style="resize:none"></textarea>
             </div>
           </div>
           <div class="control-group form-group d-none">
             <div class="controls">
-              <label>לא בשימוש</label>
-              <textarea rows="10" cols="100" class="form-control" id="notUsed" name="notUsed"
-                data-validation-required-message="Please enter your message" maxlength="999"
-                style="resize:none"></textarea>
+              <textarea rows="10" cols="100" class="form-control" id="notUsed" name="notUsed" aria-hidden="true"
+                tabindex="-1" autocomplete="off" maxlength="999" style="resize:none"></textarea>
             </div>
           </div>
-          <div id="success" class="thankyou_message d-none">ההודעה נשלחה בהצלחה. תודה רבה.</div>
-          <!-- For success/fail messages -->
+          <div id="success" class="thankyou_message d-none" role="status" tabindex="-1">ההודעה נשלחה בהצלחה. תודה רבה.</div>
+          <div class="failure_message d-none" role="alert" tabindex="-1">אירעה שגיאה בשליחת ההודעה. ניתן לפנות בטלפון 052-5780088 או לשלוח מייל ל-levrivka12@gmail.com.</div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="consent" name="consent" required>
+            <label class="form-check-label" for="consent">אני מאשר/ת שהפרטים שמילאתי יישלחו לרבקה לב לצורך חזרת קשר, בהתאם ל<a href="privacy-policy.html">מדיניות הפרטיות והעוגיות</a></label>
+          </div>
           <button type="submit" class="btn btn-primary" id="sendMessageButton">שלח</button>
         </form>
       </div>
 
-      <!-- Submit the Form to Google Using "AJAX" -->
       <script data-cfasync="false" src="js/form-submission-handler.js"></script>
 
     </div>
@@ -367,42 +372,60 @@
 
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    </div>
+  </main>
 
-      <div class="container">
-
-        <div class="container text-center">
-          <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook"></a>
-          <a href="https://wa.me/972525780088" class="fa fa-whatsapp"></a>
-          <!-- <a href="#" class="fa fa-twitter"></a> -->
-          <a href="mailto: levrivka12@gmail.com" class="fa fa-google"></a>
-          <!-- <a href="#" class="fa fa-linkedin"></a> -->
-          <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube"></a>
-          <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram"></a>
-          <a href="tel: 052-5780088" class="fa fa-phone"></a>
-          <!-- <a href="#" class="fa fa-skype"></a> -->
-        </div>
-        <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2020</p>
-
+<footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="container text-center">
+        <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook" aria-label="פייסבוק של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://wa.me/972525780088" class="fa fa-whatsapp" aria-label="וואטסאפ: שליחת הודעה לרבקה לב" target="_blank" rel="noopener"></a>
+        <a href="mailto:levrivka12@gmail.com" class="fa fa-google" aria-label="שליחת מייל לרבקה לב"></a>
+        <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube" aria-label="ערוץ היוטיוב של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram" aria-label="אינסטגרם של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="tel:052-5780088" class="fa fa-phone" aria-label="התקשרות בטלפון: 052-5780088"></a>
       </div>
-      <!-- /.container -->
-    </footer>
+      <nav class="footer-links text-center" aria-label="ניווט משני">
+        <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+        <a href="terms-of-use.html">תנאי שימוש</a>
+        <a href="accessibility-statement.html">הצהרת נגישות</a>
+        <a href="contact.html">צור קשר</a>
+      </nav>
+      <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2026</p>
+    </div>
+  </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $('#callButton1').on('click', function () {
-          $(this).html('טלפון: 052-5780088');
-        });
-        $('#callButton2').on('click', function () {
-          $(this).html('טלפון: 052-5780088');
-        });
+  <div id="cookieNotice" class="cookie-banner" role="region" aria-label="הודעה על שימוש בעוגיות" hidden>
+    <p>האתר עושה שימוש בקובצי עוגיות לניתוח נתוני שימוש באתר (Google Analytics) בלבד,
+      ללא פרסום, ללא מעקב מותאם וללא העברת מידע לצדדים שלישיים לצרכים פרסומיים.
+      לפרטים ולאפשרות הפסקה עיינו בעמוד:
+      <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+      <button type="button" class="btn btn-primary btn-sm" id="cookieAccept" aria-label="אישור וסגירת הודעת העוגיות">אישור</button>
+    </p>
+  </div>
+  <script src="js/site.js"></script>
+  <script>
+    $(function () {
+      var cycling = true;
+      $('#carouselPause').on('click', function () {
+        var $btn = $(this);
+        if (cycling) { $('#carouselExampleSlidesOnly').carousel('pause'); }
+        else { $('#carouselExampleSlidesOnly').carousel('cycle'); }
+        cycling = !cycling;
+        $btn.find('.fa').toggleClass('fa-pause fa-play');
+        $btn.attr('aria-pressed', cycling ? 'false' : 'true');
+        $btn.attr('aria-label', cycling ? 'הפסקת החלפת התמונות האוטומטית' : 'המשך החלפת התמונות האוטומטית');
       });
 
-    </script>
+      $('.js-phone-cta').on('click', function () {
+        $(this).html('טלפון: 052-5780088');
+      });
+    });
+  </script>
 
 </body>
 

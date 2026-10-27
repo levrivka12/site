@@ -1,61 +1,41 @@
-# [Start Bootstrap - Modern Business](https://startbootstrap.com/templates/modern-business/)
+# האתר של רבקה לב — פיזיותרפיה התפתחותית ושיקום רצפת אגן
 
-[Modern Business](https://startbootstrap.com/templates/modern-business/) is a multipurpose, full website template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This template includes 17 unique HTML pages and a working PHP contact form.
+אתר סטטי עברי (RTL) עבור `www.rivkalev.com`, המנוהל ב-GitHub Pages (ראו `CNAME`).
+הבסיס: התבנית [Modern Business](https://startbootstrap.com/template-overviews/modern-business/)
+של [Start Bootstrap](https://startbootstrap.com/), שהותאמה לרבקה לב (מבוססת Bootstrap 4.5.0).
 
-## Preview
+## עמודים
 
-[![Modern Business Preview](https://startbootstrap.com/assets/img/screenshots/templates/modern-business.png)](https://startbootstrap.github.io/startbootstrap-modern-business/)
+| עמוד                                | תיאור                                                                 |
+| ----------------------------------- | --------------------------------------------------------------------- |
+| `index.html`                        | עמוד הבית: היכרות, שטחי טיפול אישי, כרזת תמונות וטופס פנייה             |
+| `pediatric_physical_therapy.html`   | פיזיותרפיה התפתחותית לתינוקות וילדים                                    |
+| `pelvic_floor_rehabilitation.html`  | שיקום רצפת אגן לנשים                                                   |
+| `pediatric_pelvic_floor.html`       | רצפת אגן לילדים, גמילה מחיתולים ומידע על ICCS                           |
+| `lectures.html`, `sadnaot.html`     | הרצאות וסדנאות                                                         |
+| `movies.html`, `posts.html`, `tips.html`, `reviews.html` | סרטוני הדרכה, פוסטים, טיפים והמלצות |
+| `contact.html`                      | פרטי קשר, מפה click-to-load וטופס פנייה                                 |
+| `privacy-policy.html`               | מדיניות פרטיות ועוגיות                                                 |
+| `terms-of-use.html`                 | תנאי שימוש באתר                                                        |
+| `accessibility-statement.html`      | הצהרת נגישות (ת"י 5568 / WCAG 2.1 AA)                                   |
+| `404.html`                          | עמוד שגיאה עברי ל-GitHub Pages                                          |
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-modern-business/)**
+## פרטיות ועוגיות
 
-## Status
+- Google Analytics (`UA-179818286-1`) מופעל עם `anonymize_ip: true`.
+- בכל עמוד מופיעה הודעת עוגיות עם הסבר וקישור למדיניות הפרטיות ולאפשרות הפסקת המעקב.
+- סרטונים מוטמעים מ`youtube.com` (התחום הרגיל — נדרש כדי שהתצוגה המקדימה של YouTube תעבוד ללא שגיאה 153), ומפת Google נטענת רק בלחיצה על הכפתור.
+- טפסי הקשר שולחים את הפרטים באמצעות Google Apps Script אל תיבת המייל של רבקה לב,
+  אחרי אישור המסירה בטופס ולפי מדיניות הפרטיות.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-modern-business/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-modern-business.svg)](https://www.npmjs.com/package/startbootstrap-modern-business)
-[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-modern-business.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-modern-business)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-modern-business/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-modern-business)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-modern-business/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-modern-business?type=dev)
+## הרצת בדיקות
 
-## Download and Installation
+הבדיקות בנויות ב-Python עם `unittest` (אין צורך ב-node). דרושים `requests` ו`lxml`:
 
-To begin using this template, choose one of the following options to get started:
+```bash
+python3 -m unittest discover -s tests -p "test_*.py" -v
+```
 
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/templates/modern-business/)
-* Install via npm: `npm i startbootstrap-modern-business`
-* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-modern-business.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-modern-business)
+## פריסה
 
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-You must have npm and Gulp installed globally on your machine in order to use these features.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-modern-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/templates/modern-business/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* <https://startbootstrap.com>
-* <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**.
-
-* <http://davidmiller.io>
-* <https://twitter.com/davidmillerskt>
-* <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
+העברת הקובצים אל ענף `gh-pages` מפרסמת את האתר ב-https://www.rivkalev.com (GitHub Pages).

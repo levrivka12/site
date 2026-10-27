@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
 
@@ -10,18 +10,20 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-179818286-1');
+    gtag('config', 'UA-179818286-1', { anonymize_ip: true });
   </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <link rel="icon" type="image/svg+xml" href="res/favicon.svg">
+  <meta name="theme-color" content="#343a40">
+  <meta name="description" content="הרצאות של רבקה לב להורים, לצוותים מקצועיים ולגננות: התפתחות התינוק, הנחת דפוסים תקינים, משחק מונחה ורצפת האגן של הילדים.">
   <meta name="author" content="">
 
-  <title>רבקה לב - פיזיותרפיה התפתחותית, הדרכת הורים ושיקום רצפת אגן</title>
+  <title>הרצאות להורים ולצוותים מקצועיים - רבקה לב</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
@@ -34,13 +36,16 @@
 
 <body>
 
+  <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+
+
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav aria-label="תפריט ראשי" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">רבקה לב</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="פתיחה וסגירה של התפריט">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -91,17 +96,18 @@
   </nav>
 
   <!-- Page Content -->
+<main id="main">
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">הרצאות</h1>
-
-    <ol class="breadcrumb">
+    <ol class="breadcrumb" aria-label="נתיב הגלישה">
       <li class="breadcrumb-item">
         <a href="index.html">עמוד ראשי</a>
       </li>
-      <li class="breadcrumb-item active">הרצאות</li>
+      <li class="breadcrumb-item active" aria-current="page">הרצאות</li>
     </ol>
+
+    <h1 class="mt-4 mb-3">הרצאות</h1>
 
     <h2 id="pediatric_physical_therapy" class="scrollable">פיזיותרפיה התפתחותית</h2>
 
@@ -109,11 +115,11 @@
       <div class="col-lg-6 portfolio-item">
         <div class="card h-100">
           <a href="contact.html#contactMe"><img class="card-img-top"
-              src="res/pictures/development_first_year_700_400.jpg" alt=""></a>
+              src="res/pictures/development_first_year_700_400.jpg" alt="להרצאה על חשיבות ההתפתחות בשנה הראשונה לחיינו"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="contact.html#contactMe">חשיבות ההתפתחות בשנה הראשונה לחיינו</a>
-            </h4>
+            </h3>
             <p class="card-text">עד כמה חשובה השנה הראשונה של החיים שלנו,
               כמה באמת היא משפיעה על העתיד שלנו?
               האם יש השפעה לתנועתיות ברחם או לתרגול עם תינוקות?
@@ -134,11 +140,11 @@
       <div class="col-lg-6 portfolio-item">
         <div class="card h-100">
           <a href="contact.html#contactMe"><img class="card-img-top" src="res/pictures/the_power_of_touch_700_400.jpg"
-              alt=""></a>
+              alt="להרצאה על כוחו של מגע"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="contact.html#contactMe">כוחו של מגע</a>
-            </h4>
+            </h3>
             <p class="card-text">
               כמה המגע משמעותי בחיינו ובחיי היילוד, על איזה מערכות הוא משפיע בגוף שלנו, האם ניתן לעודד גדילה והתפתחות על ידי מגע? האם מגע מרגיע?
 איך אפשר לעזור לילד שלנו שסובל מחוסר שקט? מגזים? כאבי בטן? 
@@ -154,7 +160,7 @@
         </div>
       </div>
 
-      <a id="callButton1" class="btn btn-lg btn-secondary btn-block" href="movies.html#pediatric_physical_therapy">
+      <a class="btn btn-lg btn-secondary btn-block" href="movies.html#pediatric_physical_therapy">
         הרצאות מוקלטות - פיזיותרפיה התפתחותית
       </a>
 
@@ -169,11 +175,11 @@
       <div class="col-lg-6 portfolio-item">
         <div class="card h-100">
           <a href="contact.html#contactMe"><img class="card-img-top" src="res/pictures/pelvic_for_women_700_400.jpg"
-              alt=""></a>
+              alt="להרצאה על רצפת האגן"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="contact.html#contactMe">רצפת אגן</a>
-            </h4>
+            </h3>
             <p class="card-text">בואי והכירי את רצפת האגן שלך, נדבר על הכל! שינויים שאנחנו מרגישות אחרי הלידה, (מהי
               היפרדות בטנית,קרעים, תפרים, טחורים, כאבים ביחסי מין, דליפות, עצירויות, צניחות, איך אפשר לטפל בצלקת של
               ניתוח קיסרי ועוד).
@@ -187,7 +193,7 @@
         </div>
       </div>
 
-      <a id="callButton1" class="btn btn-lg btn-secondary btn-block" href="movies.html#pelvic_floor_rehabilitation">
+      <a class="btn btn-lg btn-secondary btn-block" href="movies.html#pelvic_floor_rehabilitation">
         הרצאות מוקלטות - שיקום רצפת אגן
       </a>
 
@@ -201,11 +207,11 @@
       <div class="col-lg-6 portfolio-item">
         <div class="card h-100">
           <a href="contact.html#contactMe"><img class="card-img-top"
-              src="res/pictures/pelvic_children_2_card_700_400.jpg" alt=""></a>
+              src="res/pictures/pelvic_children_2_card_700_400.jpg" alt="להרצאה על רצפת אגן לילדים"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="contact.html#contactMe">רצפת אגן לילדים- יש דבר כזה?!</a>
-            </h4>
+            </h3>
             <p class="card-text">אתם חושבים איך להתחיל גמילה מחיתולים? ילדכם סובל מעצירות, בעיות שליטה במהלך היום או
               מהרטבה בלילה? שלחו אותכם לטיפול רגשי אבל זה לא מתקדם...
               בואו לשמוע מפיזיותרפיסטית מומחית ברצפת אגן ומדריכת הורים מוסמכת, בהרצאה מרתקת על תוכנית אחת של אימון שרירי
@@ -223,11 +229,11 @@
       <div class="col-lg-6 portfolio-item">
         <div class="card h-100">
           <a href="contact.html#contactMe"><img class="card-img-top" src="res/pictures/parents_consulting_700_400.jpg"
-              alt=""></a>
+              alt="להרצאה על הדרכת הורים"></a>
           <div class="card-body">
-            <h4 class="card-title">
+            <h3 class="card-title">
               <a href="contact.html#contactMe">הדרכת הורים</a>
-            </h4>
+            </h3>
             <p class="card-text">כמה פעמים אמרתי לילד שלי לא או ביקשתי ממנו משהו והוא לא מקשיב, נולד לה אח קטן ופתאום
               היא ממש השתנה זה בלתי נסבל, אני מרגישה שעל כל דבר צריך להתווכח, מה עושים עם מריבות בין אחים? להתערב? אני
               כל היום מתייחסת אליה כמה תשומת לב היא צריכה? פרסים ועונשים האם זה טוב? איך אפשר להעמיד גבולות מבלי לכעוס?
@@ -242,7 +248,7 @@
         </div>
       </div>
 
-      <a id="callButton1" class="btn btn-lg btn-secondary btn-block" href="movies.html#pediatric_pelvic_floor">
+      <a class="btn btn-lg btn-secondary btn-block" href="movies.html#pediatric_pelvic_floor">
         הרצאות מוקלטות - רצפת אגן לילדים והדרכת הורים
       </a>
 
@@ -251,31 +257,43 @@
     <hr>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    </div>
+  </main>
 
-      <div class="container">
-
-        <div class="container text-center">
-          <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook"></a>
-          <a href="https://wa.me/972525780088" class="fa fa-whatsapp"></a>
-          <!-- <a href="#" class="fa fa-twitter"></a> -->
-          <a href="mailto: levrivka12@gmail.com" class="fa fa-google"></a>
-          <!-- <a href="#" class="fa fa-linkedin"></a> -->
-          <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube"></a>
-          <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram"></a>
-          <a href="tel: 052-5780088" class="fa fa-phone"></a>
-          <!-- <a href="#" class="fa fa-skype"></a> -->
-        </div>
-        <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2020</p>
-
+<footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="container text-center">
+        <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook" aria-label="פייסבוק של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://wa.me/972525780088" class="fa fa-whatsapp" aria-label="וואטסאפ: שליחת הודעה לרבקה לב" target="_blank" rel="noopener"></a>
+        <a href="mailto:levrivka12@gmail.com" class="fa fa-google" aria-label="שליחת מייל לרבקה לב"></a>
+        <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube" aria-label="ערוץ היוטיוב של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram" aria-label="אינסטגרם של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="tel:052-5780088" class="fa fa-phone" aria-label="התקשרות בטלפון: 052-5780088"></a>
       </div>
-      <!-- /.container -->
-    </footer>
+      <nav class="footer-links text-center" aria-label="ניווט משני">
+        <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+        <a href="terms-of-use.html">תנאי שימוש</a>
+        <a href="accessibility-statement.html">הצהרת נגישות</a>
+        <a href="contact.html">צור קשר</a>
+      </nav>
+      <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2026</p>
+    </div>
+  </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <div id="cookieNotice" class="cookie-banner" role="region" aria-label="הודעה על שימוש בעוגיות" hidden>
+    <p>האתר עושה שימוש בקובצי עוגיות לניתוח נתוני שימוש באתר (Google Analytics) בלבד,
+      ללא פרסום, ללא מעקב מותאם וללא העברת מידע לצדדים שלישיים לצרכים פרסומיים.
+      לפרטים ולאפשרות הפסקה עיינו בעמוד:
+      <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+      <button type="button" class="btn btn-primary btn-sm" id="cookieAccept" aria-label="אישור וסגירת הודעת העוגיות">אישור</button>
+    </p>
+  </div>
+  <script src="js/site.js"></script>
+  
 </body>
 
 </html>

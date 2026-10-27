@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
 
@@ -10,18 +10,20 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-179818286-1');
+    gtag('config', 'UA-179818286-1', { anonymize_ip: true });
   </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <link rel="icon" type="image/svg+xml" href="res/favicon.svg">
+  <meta name="theme-color" content="#343a40">
+  <meta name="description" content="טיפים מעשיים להורים מאת רבקה לב: קידום התפתחות התינוק, מגע, בטן שמחה, עידוד זחילה והליכה, ורצפת אגן לנשים ולילדים.">
   <meta name="author" content="">
 
-  <title>רבקה לב - פיזיותרפיה התפתחותית, הדרכת הורים ושיקום רצפת אגן</title>
+  <title>טיפים להורים ולמשפחות - רבקה לב</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
@@ -34,13 +36,16 @@
 
 <body>
 
+  <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+
+
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav aria-label="תפריט ראשי" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">רבקה לב</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="פתיחה וסגירה של התפריט">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -91,17 +96,18 @@
   </nav>
 
   <!-- Page Content -->
+<main id="main">
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">טיפים</h1>
-
-    <ol class="breadcrumb">
+    <ol class="breadcrumb" aria-label="נתיב הגלישה">
       <li class="breadcrumb-item">
         <a href="index.html">עמוד ראשי</a>
       </li>
-      <li class="breadcrumb-item active">טיפים</li>
+      <li class="breadcrumb-item active" aria-current="page">טיפים</li>
     </ol>
+
+    <h1 class="mt-4 mb-3">טיפים</h1>
 
     <h2>פיזיותרפיה התפתחותית</h2>
 
@@ -109,10 +115,10 @@
 
       <div class="card">
         <div class="card-header" role="tab" id="headingOne">
-          <h5 class="mb-0">
+          <h3 class="h5 mb-0">
             <a data-toggle="collapse" data-parent="#accordion" href="#pediatric_physical_therapy1" aria-expanded="true"
-              aria-controls="collapseOne">עקרונות כלליים בכדי לעודד רכישת אבני דרך</a>
-          </h5>
+              aria-controls="pediatric_physical_therapy1">עקרונות כלליים בכדי לעודד רכישת אבני דרך</a>
+          </h3>
         </div>
 
         <div id="pediatric_physical_therapy1" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
@@ -256,31 +262,43 @@
     <hr>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    </div>
+  </main>
 
-      <div class="container">
-
-        <div class="container text-center">
-          <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook"></a>
-          <a href="https://wa.me/972525780088" class="fa fa-whatsapp"></a>
-          <!-- <a href="#" class="fa fa-twitter"></a> -->
-          <a href="mailto: levrivka12@gmail.com" class="fa fa-google"></a>
-          <!-- <a href="#" class="fa fa-linkedin"></a> -->
-          <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube"></a>
-          <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram"></a>
-          <a href="tel: 052-5780088" class="fa fa-phone"></a>
-          <!-- <a href="#" class="fa fa-skype"></a> -->
-        </div>
-        <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2020</p>
-
+<footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="container text-center">
+        <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook" aria-label="פייסבוק של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://wa.me/972525780088" class="fa fa-whatsapp" aria-label="וואטסאפ: שליחת הודעה לרבקה לב" target="_blank" rel="noopener"></a>
+        <a href="mailto:levrivka12@gmail.com" class="fa fa-google" aria-label="שליחת מייל לרבקה לב"></a>
+        <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube" aria-label="ערוץ היוטיוב של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram" aria-label="אינסטגרם של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="tel:052-5780088" class="fa fa-phone" aria-label="התקשרות בטלפון: 052-5780088"></a>
       </div>
-      <!-- /.container -->
-    </footer>
+      <nav class="footer-links text-center" aria-label="ניווט משני">
+        <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+        <a href="terms-of-use.html">תנאי שימוש</a>
+        <a href="accessibility-statement.html">הצהרת נגישות</a>
+        <a href="contact.html">צור קשר</a>
+      </nav>
+      <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2026</p>
+    </div>
+  </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <div id="cookieNotice" class="cookie-banner" role="region" aria-label="הודעה על שימוש בעוגיות" hidden>
+    <p>האתר עושה שימוש בקובצי עוגיות לניתוח נתוני שימוש באתר (Google Analytics) בלבד,
+      ללא פרסום, ללא מעקב מותאם וללא העברת מידע לצדדים שלישיים לצרכים פרסומיים.
+      לפרטים ולאפשרות הפסקה עיינו בעמוד:
+      <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+      <button type="button" class="btn btn-primary btn-sm" id="cookieAccept" aria-label="אישור וסגירת הודעת העוגיות">אישור</button>
+    </p>
+  </div>
+  <script src="js/site.js"></script>
+  
 </body>
 
 </html>

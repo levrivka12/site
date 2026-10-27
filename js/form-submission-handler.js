@@ -1,41 +1,78 @@
 (function() {
-  // get all data in form and return object
+  var FIELD_LABELS = {
+    name: "שם מלא",
+    phone: "מספר טלפון",
+    email: "כתובת מייל",
+    message: "הודעה"
+  };
+
+  /* Native browser bubbles follow the browser UI language (often English);
+     override each field's message with a Hebrew string on the 'invalid' event */
+  function hebrewValidityMessage(el) {
+    var v = el.validity;
+    if (v.valueMissing) {
+      if (el.type === "checkbox") {
+        return "נא לסמן את תיבת האישור לשליחת הפרטים, בהתאם למדיניות הפרטיות והעוגיות.";
+      }
+      return "נא למלא את השדה: " + (FIELD_LABELS[el.id] || "השדה") + ".";
+    }
+    if (v.typeMismatch) {
+      return "הכתובת שהוזנה אינה כתובת מייל תקינה (חסר הסימן @).";
+    }
+    if (v.patternMismatch) {
+      return "הערך שהוזן אינו תקין. נא להזין את הפורמט המבוקש.";
+    }
+    return "הערך שהוזן אינו תקין. נא לתקן ולנסות שוב.";
+  }
+
+  function bindHebrewValidationMessages(form) {
+    var controls = form.querySelectorAll("input, textarea");
+    for (var i = 0; i < controls.length; i++) {
+      (function(el) {
+        el.addEventListener("invalid", function() {
+          el.setCustomValidity(hebrewValidityMessage(el));
+        }, false);
+        el.addEventListener("input", function() {
+          el.setCustomValidity("");
+        }, false);
+        el.addEventListener("change", function() {
+          el.setCustomValidity("");
+        }, false);
+      })(controls[i]);
+    }
+  }
+
   function getFormData(form) {
     var elements = form.elements;
-	console.log("elements=" + elements);
     var honeypot;
 
     var fields = Object.keys(elements)
-	.filter(function(k) {
-		console.log("elements[k] = " + elements[k].name);
-      if (elements[k].name === "notUsed") {
-        honeypot = elements[k].value;
-		console.log("notUsed=false" + elements[k].name);
-        return false;
-      }
-	  console.log("notUsed=true" + elements[k].name);
-      return true;
-    })
-	.map(function(k) {
-      if(elements[k].name !== undefined) {
-        return elements[k].name;
-      // special case for Edge's html collection
-      }else if(elements[k].length > 0){
-        return elements[k].item(0).name;
-      }
-    }).filter(function(item, pos, self) {
-      return self.indexOf(item) == pos && item;
-    });
+      .filter(function(k) {
+        if (elements[k].name === "notUsed") {
+          honeypot = elements[k].value;
+          return false;
+        }
+        return true;
+      })
+      .map(function(k) {
+        if (elements[k] && elements[k].name !== undefined) {
+          return elements[k].name;
+        }
+        if (elements[k] && elements[k].length > 0) {
+          return elements[k].item(0).name;
+        }
+        return undefined;
+      })
+      .filter(function(item, pos, self) {
+        return self.indexOf(item) == pos && item;
+      });
 
     var formData = {};
-    fields.forEach(function(name){
+    fields.forEach(function(name) {
       var element = elements[name];
-	  console.log("element=" + element);
-      
-      // singular form elements just have one value
+
       formData[name] = element.value;
 
-      // when our element has multiple items, get their values
       if (element.length) {
         var data = [];
         for (var i = 0; i < element.length; i++) {
@@ -48,73 +85,90 @@
       }
     });
 
-    // add form-specific values into the data
     formData.formDataNameOrder = JSON.stringify(fields);
-    formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
-    formData.formGoogleSendEmail
-      = form.dataset.email || ""; // no email by default
+    formData.formGoogleSheetName = form.dataset.sheet || "responses";
+    formData.formGoogleSendEmail = form.dataset.email || "";
 
     return {data: formData, honeypot: honeypot};
   }
 
-  function handleFormSubmit(event) {  // handles form submit without any jquery we are submitting via xhr below
-    
-	event.preventDefault();
-    var form = event.target;
-    var formData = getFormData(form);
-    var data = formData.data;
+  function showFailure(form) {
+    var failureMessage = form.querySelector(".failure_message");
+    if (failureMessage) {
+      failureMessage.classList.remove("d-none");
+      failureMessage.focus && failureMessage.focus();
+    }
+  }
 
-    // If a honeypot field is filled, assume it was done so by a spam bot.
+  function handleFormSubmit(event) {
+    var url, formData, data, encoded, xhr, formElements, thankYouMessage,
+        failureMessage, buttons, i;
+
+    event.preventDefault();
+    var form = event.target;
+
+    try {
+      formData = getFormData(form);
+    } catch (err) {
+      showFailure(form);
+      return false;
+    }
+    data = formData.data;
+
     if (formData.honeypot) {
       return false;
     }
 
-    // disableAllButtons(form);
-    var url = form.action;
-    var xhr = new XMLHttpRequest();
-		
+    failureMessage = form.querySelector(".failure_message");
+    if (failureMessage) {
+      failureMessage.classList.add("d-none");
+    }
+
+    url = form.action;
+    xhr = new XMLHttpRequest();
     xhr.open('POST', url);
-    // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          //form.reset();
-		  
-		  // Disable the form input and set it to readOnly
-          var formElements = form.querySelectorAll(".form-control")
-          if (formElements) {
-			  formElements.forEach(formElement => formElement.readOnly = true);	
-          }
-		  
-		  // Show the thankyou message
-          var thankYouMessage = form.querySelector(".thankyou_message");
-          if (thankYouMessage) {
-            thankYouMessage.classList.remove("d-none");
-          }
+      if (xhr.readyState !== 4) {
+        return;
+      }
+      buttons = form.querySelectorAll("button");
+      for (i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = false;
+      }
+      if (xhr.status === 200) {
+        formElements = form.querySelectorAll(".form-control");
+        for (i = 0; i < formElements.length; i++) {
+          formElements[i].readOnly = true;
         }
+        for (i = 0; i < buttons.length; i++) {
+          buttons[i].disabled = true;
+        }
+        thankYouMessage = form.querySelector(".thankyou_message");
+        if (thankYouMessage) {
+          thankYouMessage.classList.remove("d-none");
+          thankYouMessage.focus && thankYouMessage.focus();
+        }
+      } else {
+        showFailure(form);
+      }
     };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function(k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+    xhr.onerror = function() {
+      showFailure(form);
+    };
+    encoded = Object.keys(data).map(function(k) {
+      return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
-	console.log("encoded POST" + encoded);
     xhr.send(encoded);
   }
-  
+
   function loaded() {
-    // bind to the submit event of our form
     var forms = document.querySelectorAll("form.gform");
     for (var i = 0; i < forms.length; i++) {
       forms[i].addEventListener("submit", handleFormSubmit, false);
-	  console.log("found form element");
-    }
-  };
-  document.addEventListener("DOMContentLoaded", loaded, false);
-
-  function disableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].disabled = true;
+      bindHebrewValidationMessages(forms[i]);
     }
   }
+
+  document.addEventListener("DOMContentLoaded", loaded, false);
 })();

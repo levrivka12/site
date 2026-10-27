@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
 
@@ -10,18 +10,20 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-179818286-1');
+    gtag('config', 'UA-179818286-1', { anonymize_ip: true });
   </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <link rel="icon" type="image/svg+xml" href="res/favicon.svg">
+  <meta name="theme-color" content="#343a40">
+  <meta name="description" content="סרטוני הדרכה של רבקה לב: טיפים להורים, עידוד זחילה והליכה, עיסוי תינוקות ותרגולים לרצפת האגן של נשים וילדים.">
   <meta name="author" content="">
 
-  <title>רבקה לב - פיזיותרפיה התפתחותית, הדרכת הורים ושיקום רצפת אגן</title>
+  <title>סרטוני הדרכה ותמיכה - רבקה לב</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
@@ -33,13 +35,16 @@
 
 <body>
 
+  <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+
+
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav aria-label="תפריט ראשי" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">רבקה לב</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="פתיחה וסגירה של התפריט">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -90,18 +95,18 @@
   </nav>
 
   <!-- Page Content -->
+<main id="main">
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">סרטונים
-    </h1>
-
-    <ol class="breadcrumb">
+    <ol class="breadcrumb" aria-label="נתיב הגלישה">
       <li class="breadcrumb-item">
         <a href="index.html">עמוד ראשי</a>
       </li>
-      <li class="breadcrumb-item active">סרטונים</li>
+      <li class="breadcrumb-item active" aria-current="page">סרטונים</li>
     </ol>
+
+    <h1 class="mt-4 mb-3">סרטונים</h1>
 
     <h2 id="pediatric_physical_therapy" class="scrollable">פיזיותרפיה התפתחותית</h2>
 
@@ -109,13 +114,13 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item" id="eat_sleep_cry_repeat">
         <div class="card h-100">
-          <a href="https://m.facebook.com/story.php?story_fbid=140358101104879&id=129079512232738" target="_blank"><img
-              class="card-img-top" src="res/pictures/movies/eat_sleep_cry_repeat.jpg" alt=""></a>
+          <a href="https://m.facebook.com/story.php?story_fbid=140358101104879&id=129079512232738" target="_blank" rel="noopener"><img
+              class="card-img-top" src="res/pictures/movies/eat_sleep_cry_repeat.jpg" alt="לצפייה בפוסט EAT, SLEEP, CRY... REPEAT בפייסבוק"></a>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://m.facebook.com/story.php?story_fbid=140358101104879&id=129079512232738" target="_blank">EAT, SLEEP,
+            <h3 class="card-title">
+              <a href="https://m.facebook.com/story.php?story_fbid=140358101104879&id=129079512232738" target="_blank" rel="noopener">EAT, SLEEP,
                 CRY... REPEAT</a>
-            </h4>
+            </h3>
             <p class="card-text">מומחים מובילים משוחחים ועונים לשאלות על כל מה שבין הורים לתינוקות: אהבה, מגע, תזונה,
               הנקה , פעילות, שפה ושינה</p>
           </div>
@@ -125,13 +130,13 @@
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VQpHm0V_MZA?controls=0" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/VQpHm0V_MZA?controls=0" title="סרטון הדרכה: טיפים לעידוד הרמת ראש אצל תינוקות" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/VQpHm0V_MZA" target="_blank">בימים אלו חשוב שכולנו נרים את הראש</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/VQpHm0V_MZA" target="_blank" rel="noopener">בימים אלו חשוב שכולנו נרים את הראש</a>
+            </h3>
             <p class="card-text">קבלו סרטון קצר עם כמה
               טיפים לעידוד הרמת ראש אצל תינוקות </p>
           </div>
@@ -141,14 +146,13 @@
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aJgyuKvdYME?controls=0" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/aJgyuKvdYME?controls=0" title="סרטון הדרכה: עידוד התהפכות וגלגולים אצל תינוקות" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/aJgyuKvdYME" target="_blank">איך ניתן לעזור לתינוק להתהפך</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/aJgyuKvdYME" target="_blank" rel="noopener">איך ניתן לעזור לתינוק להתהפך</a>
+            </h3>
             <p class="card-text">קבלו סרטון קצר על גלגולים, איך ניתן לעודד תינוק להתהפך מהגב אל הבטן ולהיפך
               כמובן שנרצה לראות אותו עושה זאת משני הצדדים....</p>
           </div>
@@ -158,16 +162,16 @@
       <div id="pediatric_physical_therapy-first_year_development" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CGwk-E4usOU" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/CGwk-E4usOU" title="הרצאה מוקלטת: התפתחות מוטורית מעובר לתינוק בשנה הראשונה לחיים" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/CGwk-E4usOU" target="_blank">
+            <h3 class="card-title">
+              <a href="https://youtu.be/CGwk-E4usOU" target="_blank" rel="noopener">
                 מעובר לתינוק התפתחות מוטורית בשנה הראשונה לחיים
               </a>
-            </h4>
+            </h3>
             <p class="card-text">
               הרצאה חשובה לכל הורה,
               בואו לשמוע עד כמה חשובה השנה הראשונה בחיינו וכמה באמת היא משמעותית על המשך ההתפתחות ועל העתיד שלנו.
@@ -183,15 +187,15 @@
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yIsnFfPL27c?controls=0" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/yIsnFfPL27c?controls=0" title="פאנל פיזיותרפיסטיות התפתחותיות בתוכנית הרדיו מגדלים הורים" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/yIsnFfPL27c" target="_blank">
+            <h3 class="card-title">
+              <a href="https://youtu.be/yIsnFfPL27c" target="_blank" rel="noopener">
               פאנל פיזיותרפיסטיות התפתחותיות בתוכנית הרדיו מגדלים הורים
             </a>
-            </h4>
+            </h3>
             <p class="card-text">
               מהי פיזיותרפיה התפתחותית? מה היא כוללת? 
 פאנל שעוסק בראייה הכוללת, בהבנה שילד והקושי שלו אינו עומד לבדו, הוא חלק בלתי נפרד מהמשפחה שלו והיחסים איתם משפיעים עליו וכמובן על ההתקדמות בטיפול.
@@ -212,13 +216,13 @@
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rTvNjZl39aA?controls=0" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/rTvNjZl39aA?controls=0" title="סרטון הדרכה: להרגיש את רצפת האגן" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/rTvNjZl39aA" target="_blank">להרגיש את רצפת האגן</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/rTvNjZl39aA" target="_blank" rel="noopener">להרגיש את רצפת האגן</a>
+            </h3>
             <p class="card-text">אחרי שערכנו הכרות עם רצפת האגן,
               בואו ננסה להרגיש אותה, לעלות מודעות אליה,
               נשתמש בכל החושים שלנו</p>
@@ -229,14 +233,13 @@
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/EHRKZRc5p-o?controls=0" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/EHRKZRc5p-o?controls=0" title="סרטון הדרכה: כיווץ ושחרור של רצפת האגן" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/EHRKZRc5p-o" target="_blank">כיווץ ושחרור של רצפת האגן</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/EHRKZRc5p-o" target="_blank" rel="noopener">כיווץ ושחרור של רצפת האגן</a>
+            </h3>
             <p class="card-text">איך נדע אם אנחנו מכווצות נכון ?
               קבלו הסבר קצר על כיווץ ושחרור של רצפת אגן
               שתי סיטואציות שכולכן מכירות וישר תבינו על מה אני מדברת...
@@ -248,13 +251,13 @@
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OMmJFhNk9ao?controls=0" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/OMmJFhNk9ao?controls=0" title="סרטון הדרכה: חזרה לפעילות עצימה אחרי לידה" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/OMmJFhNk9ao" target="_blank">חזרה לפעילות עצימה אחרי לידהן</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/OMmJFhNk9ao" target="_blank" rel="noopener">חזרה לפעילות עצימה אחרי לידהן</a>
+            </h3>
             <p class="card-text">איך אפשר לדעת מתי אפשר להתחיל פעילות עצימה לאחר לידה?????
               עשינו לכן סרטון בדיוק בשביל זה..
               על בסיס מחקר מעולה שפורסם ונותן את כל התשובות..
@@ -273,13 +276,13 @@
       <div id="Digestive_and_urinary_systems-together_we_will_win" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://youtube.com/embed/p5g03t9ncgg" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/p5g03t9ncgg" title="הרצאה מוקלטת: מערכת העיכול והשתן - ביחד ננצח" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/p5g03t9ncgg" target="_blank">מערכת העיכול והשתן - ביחד ננצח !</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/p5g03t9ncgg" target="_blank" rel="noopener">מערכת העיכול והשתן - ביחד ננצח !</a>
+            </h3>
             <p class="card-text">
               מה קורה למערכת העיכול והשתן בחוסר שגרה, בזמני לחץ וסטרס, וכעת במלחמה.
 איך ניתן להתמודד בתקופה המורכבת הזאת עם גמילות מחיתולים שמסתבכות, ילדים שמרטיבים ביום או בלילה, עם ילדים שמתאפקים עד כדי עצירויות.
@@ -294,13 +297,13 @@
       <div id="pediatric_pelvic_floor-the_unique_treatment" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xBZ2ifXoi3A?controls=0" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/xBZ2ifXoi3A?controls=0" title="הרצאה בנושא טיפול ייחודי - רצפת אגן לילדים והדרכת הורים" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/xBZ2ifXoi3A" target="_blank">הרצאה בנושא טיפול ייחודי - רצפת אגן לילדים והדרכת הורים</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/xBZ2ifXoi3A" target="_blank" rel="noopener">הרצאה בנושא טיפול ייחודי - רצפת אגן לילדים והדרכת הורים</a>
+            </h3>
             <p class="card-text">חושבים איך להתחיל גמילה מחיתולים?
               ילדכם סובל מעצירות או מדליפות שתן במהלך היום או הלילה?
               בואו לשמוע על טיפול ייחודי שמשלב בתוכו גם מענה לצד הפיזי וגם לצד הרגשי הרי לא ניתן להפריד בניהם....
@@ -313,16 +316,16 @@
       <div id="pediatric_pelvic_floor-lecture_for_doctors" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8_XT39rEfSo" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/8_XT39rEfSo" title="הרצאה לרופאים ואנשי טיפול: רצפת אגן לילדים והדרכת הורים" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/8_XT39rEfSo" target="_blank">הטיפול המשלים (רצפת אגן לילדים והדרכת הורים) הרצאה לרופאים ואנשי
+            <h3 class="card-title">
+              <a href="https://youtu.be/8_XT39rEfSo" target="_blank" rel="noopener">הטיפול המשלים (רצפת אגן לילדים והדרכת הורים) הרצאה לרופאים ואנשי
                 טיפול
               </a>
-            </h4>
+            </h3>
             <p class="card-text">
               סרטון קצר שמיועד לרופאים, רופאי משפחה, גסטרולוגים, אורולוגים, רופאי ילדים. אנשי טיפול פסיכולוגים, מטפלים
               רגשיים, מטפלים פרה רפואיים, מדריכי הורים. על מנת לעלות מודעות לטיפול המשלים לשלהם, רצפת אגן לילדים בשילוב
@@ -337,15 +340,15 @@
       <div id="pediatric_pelvic_floor-the_holistic_treatment" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l49UYG1YPRs" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/l49UYG1YPRs" title="הרצאה מוקלטת: הטיפול השלם - רצפת אגן לילדים והדרכת הורים" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/l49UYG1YPRs" target="_blank">הטיפול השלם רצפת אגן לילדים והדרכת הורים
+            <h3 class="card-title">
+              <a href="https://youtu.be/l49UYG1YPRs" target="_blank" rel="noopener">הטיפול השלם רצפת אגן לילדים והדרכת הורים
               </a>
-            </h4>
+            </h3>
             <p class="card-text">
               הרצאה באורך מלא, הרצאת חובה לכל הורה על בעיות שכיחות, איך כדי להתחיל גמילה מחיתולים, איך מתמודדים עם
               עצירות אצל ילדים, מה אפשר לעשות כדי להיפטר מהרטבות לילה, מה הקשר לכל אלו ולדלקות חוזרות בשתן.
@@ -360,16 +363,16 @@
       <div id="pediatric_pelvic_floor-myth_busting" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hf_RyVo2FXI" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/hf_RyVo2FXI" title="הרצאה מוקלטת: ניפוץ מיתוסים ברצפת אגן לילדים" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/hf_RyVo2FXI" target="_blank">
+            <h3 class="card-title">
+              <a href="https://youtu.be/hf_RyVo2FXI" target="_blank" rel="noopener">
                 ניפוץ מיתוסים ברצפת אגן לילדים
               </a>
-            </h4>
+            </h3>
             <p class="card-text">
               מה זה בכלל טיפול רצפת אגן לילדים?
               האם יש כזה תחום?
@@ -390,16 +393,16 @@
       <div id="pediatric_pelvic_floor-radio_show" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/80FOyS-DGNk" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/80FOyS-DGNk" title="תוכנית רדיו: רצפת אגן לילדים וטיפול משולב עם הדרכת הורים" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/80FOyS-DGNk" target="_blank">
+            <h3 class="card-title">
+              <a href="https://youtu.be/80FOyS-DGNk" target="_blank" rel="noopener">
                 תוכנית רדיו בנושא רצפת אגן לילדים וטיפול משולב עם הדרכת הורים יחד עם אורלי נייגר מגדלים הורים
               </a>
-            </h4>
+            </h3>
             <p class="card-text">
               בואו לשמוע על נושאים שמעניינים כל משפחה, גמילה מחיתולים, עצירויות, הרטבות לילה ודלקות חוזרות בשתן.
               קבלו טיפים איך צולחים את תהליך הגמילה באופן טוב ומה אפשר לעשות כשזה מסתבך ולא הולך כמו שצריך.
@@ -412,16 +415,16 @@
       <div id="pediatric_pelvic_floor-women_health_day" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DrkpjQI7dkI" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/DrkpjQI7dkI" title="תיאור מקרה ביום עיון לבריאות האישה - העמותה לקידום הפיזיותרפיה" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/DrkpjQI7dkI" target="_blank">
+            <h3 class="card-title">
+              <a href="https://youtu.be/DrkpjQI7dkI" target="_blank" rel="noopener">
                 תיאור מקרה ביום עיון לבריאות האישה - העמותה לקידום הפיזיותרפיה
               </a>
-            </h4>
+            </h3>
             <p class="card-text">
               מוצג תיאור מקרה כחלק מיום עיון בריאות האישה של העמותה לקידום הפיזיותרפיה.
               משך ההרצאה כ 10 דק.
@@ -435,14 +438,14 @@
       <div id="pediatric_pelvic_floor-adler_in_nutshell" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/M14-i8DzUs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/M14-i8DzUs0" title="הרצאה מוקלטת: אדלר על קצה המזלג - רצפת אגן לילדים והדרכת הורים" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/M14-i8DzUs0" target="_blank">
+            <h3 class="card-title">
+              <a href="https://youtu.be/M14-i8DzUs0" target="_blank" rel="noopener">
                  אדלר על קצה המזלג
               </a>
-            </h4>
+            </h3>
             <p class="card-text">
               מוצג תיאור מקרה כחלק מכנס להתפתחות הילד של העמותה הישראלית להתפתחות הילד ושיקומו. משך ההרצאה כ 15 דק. המקרה מדבר על טיפול של רצפת אגן לילדים ועל החשיבות של הדרכת הורים כחלק מהטיפול. בנוסף נותן טיפים לפיזיותרפיסטים ואנשי טיפול למה לשים לב בקליניקה.
             </p>
@@ -461,13 +464,13 @@
       <div id="boundaries_and_good_relations" class="col-lg-4 col-sm-6 portfolio-item scrollable">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/D_OMumzQ7OU" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/D_OMumzQ7OU" title="הרצאה להורי הגנים: גבולות ברורים עם יחסים טובים" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/D_OMumzQ7OU" target="_blank">גבולות ברורים עם יחסים טובים</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/D_OMumzQ7OU" target="_blank" rel="noopener">גבולות ברורים עם יחסים טובים</a>
+            </h3>
             <p class="card-text">
               סרטון שנעשה להורי הגנים לכבוד יום המשפחה, הרצאה שמדברת על חוקים וגבולות, עם שמירה על יחסים טובים במשפחה. 
 ההרצאה מפרטת מהם חוקי הייסוד, מה ההבדל בין גבול לחוק? איך אפשר להשיג מילד שיתוף פעולה, מה הסיבה שילד לא משתף פעולה, מהי תשומת לב יתרה? ומהו מאבק כוח? איך ניתן לצאת ממאבק כוח? מספר כלים פרקטים לשמור על יחסים טובים ולהגיע לשיתוף פעולה
@@ -487,13 +490,13 @@
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/u9DWSso1w8g?controls=0" frameborder="0"
+            <iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/u9DWSso1w8g?controls=0" title="התארחות בתוכנית הטלוויזיה פותחים יום בערוץ 13" loading="lazy" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://youtu.be/u9DWSso1w8g" target="_blank">תוכנית טלויזיה פותחים יום</a>
-            </h4>
+            <h3 class="card-title">
+              <a href="https://youtu.be/u9DWSso1w8g" target="_blank" rel="noopener">תוכנית טלויזיה פותחים יום</a>
+            </h3>
             <p class="card-text">הזמינו אותי ואת איילה להתארח בתוכנית הבוקר פותחים יום בערוץ 13,
               לדבר על החלק שלי בתור פיזיותרפיסטית התפתחותית במיזם של
               Little one. care....
@@ -509,31 +512,42 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  </main>
 
+<footer class="py-5 bg-dark">
     <div class="container">
-
       <div class="container text-center">
-        <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook"></a>
-        <a href="https://wa.me/972525780088" class="fa fa-whatsapp"></a>
-        <!-- <a href="#" class="fa fa-twitter"></a> -->
-        <a href="mailto: levrivka12@gmail.com" class="fa fa-google"></a>
-        <!-- <a href="#" class="fa fa-linkedin"></a> -->
-        <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube"></a>
-        <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram"></a>
-        <a href="tel: 052-5780088" class="fa fa-phone"></a>
-        <!-- <a href="#" class="fa fa-skype"></a> -->
+        <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook" aria-label="פייסבוק של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://wa.me/972525780088" class="fa fa-whatsapp" aria-label="וואטסאפ: שליחת הודעה לרבקה לב" target="_blank" rel="noopener"></a>
+        <a href="mailto:levrivka12@gmail.com" class="fa fa-google" aria-label="שליחת מייל לרבקה לב"></a>
+        <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube" aria-label="ערוץ היוטיוב של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram" aria-label="אינסטגרם של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="tel:052-5780088" class="fa fa-phone" aria-label="התקשרות בטלפון: 052-5780088"></a>
       </div>
-      <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2020</p>
-
+      <nav class="footer-links text-center" aria-label="ניווט משני">
+        <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+        <a href="terms-of-use.html">תנאי שימוש</a>
+        <a href="accessibility-statement.html">הצהרת נגישות</a>
+        <a href="contact.html">צור קשר</a>
+      </nav>
+      <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2026</p>
     </div>
-    <!-- /.container -->
   </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <div id="cookieNotice" class="cookie-banner" role="region" aria-label="הודעה על שימוש בעוגיות" hidden>
+    <p>האתר עושה שימוש בקובצי עוגיות לניתוח נתוני שימוש באתר (Google Analytics) בלבד,
+      ללא פרסום, ללא מעקב מותאם וללא העברת מידע לצדדים שלישיים לצרכים פרסומיים.
+      לפרטים ולאפשרות הפסקה עיינו בעמוד:
+      <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+      <button type="button" class="btn btn-primary btn-sm" id="cookieAccept" aria-label="אישור וסגירת הודעת העוגיות">אישור</button>
+    </p>
+  </div>
+  <script src="js/site.js"></script>
+  
 </body>
 
 </html>

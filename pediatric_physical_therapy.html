@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
 
@@ -10,18 +10,20 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-179818286-1');
+    gtag('config', 'UA-179818286-1', { anonymize_ip: true });
   </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <link rel="icon" type="image/svg+xml" href="res/favicon.svg">
+  <meta name="theme-color" content="#343a40">
+  <meta name="description" content="טיפול פיזיותרפי התפתחותי לתינוקות וילדים בהרצליה וליווי הורים: העדפת צד, זחילה, דימונים, אבני דרך התפתחותיות והתייחסות אישית לכל משפחה ולפיהם.">
   <meta name="author" content="">
 
-  <title>רבקה לב - פיזיותרפיה התפתחותית, הדרכת הורים ושיקום רצפת אגן</title>
+  <title>פיזיותרפיה התפתחותית לתינוקות וילדים - רבקה לב</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
@@ -33,13 +35,16 @@
 
 <body>
 
+  <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+
+
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav aria-label="תפריט ראשי" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">רבקה לב</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="פתיחה וסגירה של התפריט">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -90,22 +95,23 @@
   </nav>
 
   <!-- Page Content -->
+<main id="main">
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">פיזיותרפיה התפתחותית</h1>
-
-    <ol class="breadcrumb">
+    <ol class="breadcrumb" aria-label="נתיב הגלישה">
       <li class="breadcrumb-item">
         <a href="index.html">עמוד ראשי</a>
       </li>
-      <li class="breadcrumb-item active">פיזיותרפיה התפתחותית</li>
+      <li class="breadcrumb-item active" aria-current="page">פיזיותרפיה התפתחותית</li>
     </ol>
+
+    <h1 class="my-3">פיזיותרפיה התפתחותית לתינוקות וילדים</h1>
 
     <!-- Intro Content -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="res/pictures/pediatric_physical_therapy_card_2_700_400.jpg" alt="">
+        <img class="img-fluid rounded mb-4" src="res/pictures/pediatric_physical_therapy_card_2_700_400.jpg" alt="פיזיותרפיסטית מלווה תינוק בטיפול התפתחותי">
       </div>
       <div class="col-lg-6">
         <h2>טיפול אישי בפיזיותרפיה התפתחותית</h2>
@@ -123,7 +129,7 @@
 
     <hr>
 
-    <a id="callButton" class="btn btn-lg btn-secondary btn-block" href="tel: 052-5780088">לתיאום אבחון וטיפול או ביקור
+    <a class="btn btn-lg btn-secondary btn-block js-phone-cta" href="tel:052-5780088">לתיאום אבחון וטיפול או ביקור
       בית</a>
 
     <hr>
@@ -135,10 +141,10 @@
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <a href="sadnaot.html#pediatric_physical_therapy"><img class="card-img-top"
-              src="res/pictures/pediatric_physical_therapy_sadnaot_700_400.jpg" alt=""></a>
+              src="res/pictures/pediatric_physical_therapy_sadnaot_700_400.jpg" alt="לסדנאות פיזיותרפיה התפתחותית"></a>
           <div class="card-body">
             <a href="sadnaot.html#pediatric_physical_therapy">
-              <h4 class="card-title">סדנאות</h4>
+              <h3 class="card-title">סדנאות</h3>
             </a>
             <a href="sadnaot.html#pediatric_physical_therapy">
               <h6 class="card-subtitle mb-2 text-muted">פיזיותרפיה התפתחותית</h6>
@@ -150,10 +156,10 @@
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <a href="lectures.html#pediatric_physical_therapy"><img class="card-img-top"
-              src="res/pictures/pediatric_physical_therapy_lectures.jpg" alt=""></a>
+              src="res/pictures/pediatric_physical_therapy_lectures.jpg" alt="להרצאות פיזיותרפיה התפתחותית"></a>
           <div class="card-body">
             <a href="lectures.html#pediatric_physical_therapy">
-              <h4 class="card-title">הרצאות</h4>
+              <h3 class="card-title">הרצאות</h3>
             </a>
             <a href="lectures.html#pediatric_physical_therapy">
               <h6 class="card-subtitle mb-2 text-muted">פיזיותרפיה התפתחותית</h6>
@@ -164,10 +170,10 @@
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <a href="movies.html#pediatric_physical_therapy"><img class="card-img-top"
-              src="res/pictures/pediatric_physical_therapy_movies_700_400.jpg" alt=""></a>
+              src="res/pictures/pediatric_physical_therapy_movies_700_400.jpg" alt="לסרטוני פיזיותרפיה התפתחותית"></a>
           <div class="card-body">
             <a href="movies.html#pediatric_physical_therapy">
-              <h4 class="card-title">סרטונים</h4>
+              <h3 class="card-title">סרטונים</h3>
             </a>
             <a href="movies.html#pediatric_physical_therapy">
               <h6 class="card-subtitle mb-2 text-muted">פיזיותרפיה התפתחותית</h6>
@@ -189,9 +195,10 @@
             <h6 class="card-subtitle mb-2 text-muted">קבוצת וואטסאפ</h6>
             <h5 class="card-title">רבקה לב פיזיותרפיה והדרכת הורים</h5>
           </div>
-          <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw"><img class="rounded-circle img-fluid img-thumbnail"
-              src="res/pictures/WhatsApp groups - Physiothearapy and parents instruction.jpg" alt="Responsive image"
-              href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw"></a>
+          <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" target="_blank" rel="noopener"><img
+              class="rounded-circle img-fluid img-thumbnail"
+              src="res/pictures/WhatsApp groups - Physiothearapy and parents instruction.jpg"
+              alt="להצטרפות לקבוצת הוואטסאפ לפיזיותרפיה התפתחותית והדרכת הורים"></a>
           <div class="card-body">
             <p class="card-text">
               קבוצה זו נועדה עבורכם הורים לתינוקות בכל גיל, גם לעוברים בבטן...
@@ -200,9 +207,8 @@
             </p>
           </div>
           <div class="card-footer">
-            <!-- <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" class="btn btn-primary">להצטרפות</a> -->
-            <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" class="fa fa-whatsapp"></a>
-            <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" class="h5">להצטרפות</a>
+            <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" target="_blank" rel="noopener" class="fa fa-whatsapp" aria-label="הצטרפות לקבוצת רבקה לב פיזיותרפיה והדרכת הורים בוואטסאפ"></a>
+            <a href="https://chat.whatsapp.com/JtVKX6pJs0nCo7xwlBismw" target="_blank" rel="noopener" class="h5">להצטרפות</a>
           </div>
         </div>
       </div>
@@ -213,39 +219,51 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  </main>
 
+<footer class="py-5 bg-dark">
     <div class="container">
-
       <div class="container text-center">
-        <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook"></a>
-        <a href="https://wa.me/972525780088" class="fa fa-whatsapp"></a>
-        <!-- <a href="#" class="fa fa-twitter"></a> -->
-        <a href="mailto: levrivka12@gmail.com" class="fa fa-google"></a>
-        <!-- <a href="#" class="fa fa-linkedin"></a> -->
-        <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube"></a>
-        <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram"></a>
-        <a href="tel: 052-5780088" class="fa fa-phone"></a>
-        <!-- <a href="#" class="fa fa-skype"></a> -->
+        <a href="https://www.facebook.com/rivkalev.rivkalev" class="fa fa-facebook" aria-label="פייסבוק של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://wa.me/972525780088" class="fa fa-whatsapp" aria-label="וואטסאפ: שליחת הודעה לרבקה לב" target="_blank" rel="noopener"></a>
+        <a href="mailto:levrivka12@gmail.com" class="fa fa-google" aria-label="שליחת מייל לרבקה לב"></a>
+        <a href="https://www.youtube.com/channel/UCJh5Wd3WHf_weXpQHhSt39Q/videos" class="fa fa-youtube" aria-label="ערוץ היוטיוב של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="https://www.instagram.com/lev_rivka" class="fa fa-instagram" aria-label="אינסטגרם של רבקה לב" target="_blank" rel="noopener"></a>
+        <a href="tel:052-5780088" class="fa fa-phone" aria-label="התקשרות בטלפון: 052-5780088"></a>
       </div>
-      <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2020</p>
-
+      <nav class="footer-links text-center" aria-label="ניווט משני">
+        <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+        <a href="terms-of-use.html">תנאי שימוש</a>
+        <a href="accessibility-statement.html">הצהרת נגישות</a>
+        <a href="contact.html">צור קשר</a>
+      </nav>
+      <p class="m-2 text-center text-white">כל הזכויות שמורות &copy; רבקה לב 2026</p>
     </div>
-    <!-- /.container -->
   </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      $('#callButton').on('click', function () {
+    <script>
+    $(function () {
+      $('.js-phone-cta').on('click', function () {
         $(this).html('טלפון: 052-5780088');
       });
     });
   </script>
 
+
+  <div id="cookieNotice" class="cookie-banner" role="region" aria-label="הודעה על שימוש בעוגיות" hidden>
+    <p>האתר עושה שימוש בקובצי עוגיות לניתוח נתוני שימוש באתר (Google Analytics) בלבד,
+      ללא פרסום, ללא מעקב מותאם וללא העברת מידע לצדדים שלישיים לצרכים פרסומיים.
+      לפרטים ולאפשרות הפסקה עיינו בעמוד:
+      <a href="privacy-policy.html">מדיניות פרטיות ועוגיות</a>
+      <button type="button" class="btn btn-primary btn-sm" id="cookieAccept" aria-label="אישור וסגירת הודעת העוגיות">אישור</button>
+    </p>
+  </div>
+  <script src="js/site.js"></script>
+  
 </body>
 
 </html>
